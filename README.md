@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Countries Info including Currency Converter
 
-## Available Scripts
+### Description
+This website allows to efficiently search for countries. When a searched country is found,
+information such as the country's capital, population, currencies and languages are displayed
+in the country box. The currency converter is also included and allows to convert
+from Swedish krona to the country's currency.
 
-In the project directory, you can run:
+### APIs
+https://restcountries.eu and https://free.currconv.com have been used in this project.
 
-### `npm start`
+### What else could be done if more time would be allocated for this assignment?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Regarding the website functionality:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- A reverse converter could be added to convert from the country's currency to SEK.
+  Conversion to other currencies could also be added.
+- Search of countries by currency could be added.
+  Sometimes it is useful to see in which countries the same currency is used.
+- Search of countries by capital could be added.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Regarding graphic profile and UI:
 
-### `npm run build`
+- An external library could be used to achieve a better graphic profile for the website.
+- In general, more time and effort could be put into the graphic profile of the website.
+- The website is responsive and should be running in an acceptable way on mobile devices,
+  but more effort could be put into that.
+- The website functionalities have been tested in Google Chrome and Firefox browsers.
+  It would be necessary to test it in other browsers.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Regarding the code:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- The code readability would benefit from some additional comments.
+- API requests are made directly in App component in the current version,
+  it would be reasonable to put them into a service folder.
