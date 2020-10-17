@@ -4,7 +4,7 @@ const Converter = ({country, currencyRateOneSEKToLocal}) => {
     const [amount, setAmount] = useState(1);
 
     const calcConverstion = (amountInSEK) => {
-        return amountInSEK * currencyRateOneSEKToLocal;
+        return `${amountInSEK * currencyRateOneSEKToLocal} ${country.currencies[0].name}s`;
     }
 
     return (
@@ -15,10 +15,10 @@ const Converter = ({country, currencyRateOneSEKToLocal}) => {
                         value={amount}
                         onChange={(e) => {
                             const amount = e.target.value;
-                            setAmount(amount);
+                            setAmount(parseInt(amount) || 0);
                         }}
                     />
-            <h2>{calcConverstion(amount)} {`${country.currencies[0].name}s`}</h2>        
+            <h2>{calcConverstion(amount)}</h2>        
         </div>
     )
 
